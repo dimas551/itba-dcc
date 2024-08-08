@@ -33,6 +33,10 @@ img {
   text-align: right;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .relative {
   position: relative;
 }
