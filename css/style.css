@@ -1882,6 +1882,10 @@ section {
   font-size: 36px;
 }
 
+.breadcrumb-separator {
+  margin: 0 0.5rem;
+}
+
 .single-cover .cover-content .breadcrumb .breadcrumb-item a {
   color: #fff;
 }
