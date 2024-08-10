@@ -61,12 +61,13 @@
         <div class="main-overlay"></div>
 
         <!-- header -->
-        <header class="header-default">
+        <header class="header-default mb-4">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-xl">
                     <!-- site logo -->
-                    <a class="navbar-brand" href="index.html" style="width: 25%;"><img src="images/logo BEM ITBA.svg"
-                            alt="logo" /></a>
+                    <a class="navbar-brand" href="index.html" style="width: 25%;">
+                        <img src="images/logo.svg" alt="logo" />
+                    </a>
 
                     <div class="collapse navbar-collapse justify-content-center">
                         <!-- menus -->
@@ -114,20 +115,19 @@
         </header>
 
         <!-- section main content -->
-        <section class="main-content mt-3">
+        <section class="main-content mt-3 mb-4">
             <div class="container-xl">
                 <div class="row gy-4">
-                    <div>
+                    <div class="col-12">
                         <!-- post single -->
                         <div class="post post-single">
                             <!-- post header -->
-                            <div class="post-header">
-                                <h1 class="title mt-0 mb-3">PERGURUAN TINGGI</h1>
+                            <div class="post-header mb-3">
+                                <h1 class="title mt-0 mb-3"> <span id="typed-title"></span> </h1>
                             </div>
                             <!-- featured image -->
-                            <div class="featured-image">
-                                <img src="images/visi misi/wisuda.jpg" style="width: min-content;"
-                                    alt="post-title" />
+                            <div class="featured-image mb-3">
+                                <img src="images/visi misi/wisuda.jpg" style="width: min-content;" alt="post-title" />
                             </div>
                             <!-- post content -->
                             <div class="post-content clearfix text-justify">
@@ -148,10 +148,11 @@
                                         kelola perguruan tinggi yang baik dan profesional.</li>
                                 </ol>
                                 <img src="images/visi misi/Kampus ITBA-DCC.jpg" style="width:300px;height:250px;"
-                                    class="rounded alignleft" alt="...">
+                                    class="rounded alignleft mb-3" alt="...">
+
                                 <h4>TUJUAN</h4>
                                 <p>Adapun tujuan ITBA DCC sebagai berikut :</p>
-                                <ul>
+                                <ul class="mb-5">
                                     <li>Menyelenggarakan pendidikan yang bermutu sesuai dengan kebutuhan pengguna
                                         lulusan yang mampu beradaptasi di era Society 5.0.</li>
                                     <li>Menghasilkan penelitian dan pengabdian di bidang teknologi, bisnis dan bahasa
@@ -159,8 +160,6 @@
                                     <li>Terciptanya lingkungan kerja dan suasana akademis yang kondusif melalui tata
                                         kelola perguruan tinggi yang profesional dan bermutu.</li>
                                 </ul>
-
-                                <br><br>
 
                                 <h4>SASARAN</h4>
                                 <p>Dalam pencapaian visi, misi, dan tujuan yang telah diuraikan di atas dibuat sasaran
@@ -183,12 +182,12 @@
         </section>
 
         <!-- footer -->
-        <footer class="bg-dark text-white py-4">
+        <footer class="bg-dark text-white py-4 mt-4">
             <div class="container-xl">
                 <div class="footer-inner">
                     <div class="row d-flex align-items-center gy-4">
                         <!-- copyright text -->
-                        <div class="col-md-4">
+                        <div class="col-md-4 mb-3 mb-md-0">
                             <span class="copyright text-white">©
                                 <script class="text-white">
                                     document.write(new Date().getFullYear())
@@ -197,7 +196,7 @@
                         </div>
 
                         <!-- social icons -->
-                        <div class="col-md-4 text-center">
+                        <div class="col-md-4 text-center mb-3 mb-md-0">
                             <ul class="social-icons list-unstyled list-inline mb-0">
                                 <li class="list-inline-item"><a href="https://www.facebook.com/dccbdl" target="_blank"
                                         class="text-white"><i class="fab fa-facebook-f"></i></a>
@@ -212,9 +211,9 @@
                         </div>
 
                         <!-- go to top button -->
-                        <div class="col-md-4">
-                            <a href="#" id="return-to-top" class="float-md-end text-white"><i class="icon-arrow-up"></i>
-                                Back to Top</a>
+                        <div class="col-md-4 text-md-end">
+                            <a href="#" id="return-to-top" class="text-white"><i class="icon-arrow-up"></i> Back to
+                                Top</a>
                         </div>
                     </div>
                 </div>
@@ -286,12 +285,24 @@
     </div>
 
     <!-- JAVA SCRIPTS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var typed = new Typed('#typed-title', {
+                strings: ["Vision & Mission"],
+                typeSpeed: 100,
+                backSpeed: 50,
+                loop: true
+            });
+        });
+    </script>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.sticky-sidebar.min.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/typedjs.js"></script>
 
 </body>
 
